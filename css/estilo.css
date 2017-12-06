@@ -1,0 +1,112 @@
+body {
+	font-family: arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+p {
+	text-align: justify;
+}
+
+.logo {
+	padding-right: 20px;
+	width: 70px;
+}
+
+.promo {
+	width: 100%;
+	padding-top: 80px;
+}
+
+a {
+	color: #d11f22;
+}
+
+a:hover {
+	color: #b91114;
+}
+
+h4 {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}
+
+.bg-gray {
+	background-color: #f5f7f4;
+}
+
+.bg-gray-dark {
+	background-color: #c8c9c7;
+}
+
+.largura {
+	width: 100%;
+}
+
+.bg-red {
+	background-color: #d11f22;
+}
+
+.alturalinha {
+	height: 2px;
+}
+
+.lg90 {
+	width: 90%;
+	margin: auto;
+}
+
+.fontred {
+	color: #d11f22;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.fontwhite {
+	color: white;
+}
+
+.alturaimg {
+	height: 300px;
+}
+
+.shadow {
+	box-shadow: 4px 4px 2px #888888;
+}
+
+.freesoul {
+	width: 80px;
+}
+
+.senai {
+	width: 100px;
+	padding-right: 10px;
+}
+
+.nav-item:hover {
+	background-color: #bcbbbb;
+}
+
+.ptop {
+	padding-top: 30px;
+}
+
+.pbottom {
+	padding-bottom: 30px;
+}
+
+.mright {
+	margin-right: 65px;
+}
+
+.mtop {
+	margin-top: 40px;
+}
+
+.mbottom {
+	margin-bottom: 40px;
+}

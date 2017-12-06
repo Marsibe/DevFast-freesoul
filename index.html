@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DevFast</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+		integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<!-- NavBar -->
+			<nav class="navbar navbar-expand-lg bg-gray fixed-top">
+				<div class="container">
+					<a class="navbar-brand" href="#"><img src="imagens/logo.png" alt="logo" class="logo">DevFast</a>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							  <a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							  <a class="nav-link" href="#">Log in</a>
+						</li>
+						<li class="nav-item">
+							  <a class="nav-link" href="#">Cadastrar restaurantes</a>
+						</li>
+						<li class="nav-item">
+							  <a class="nav-link" href="#">Cadastrar Motoboys</a>
+						</li>
+						<li class="nav-item">
+							  <a class="nav-link" href="#">Motoboys</a>
+						</li>
+						<li class="nav-item">
+							  <a class="nav-link" href="#">Restaurantes</a>
+						</li>
+						<li class="nav-item">
+							  <a class="nav-link" href="#">Dashboard</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- Main -->
+		<main>
+			<!-- Promo -->
+			<img src="imagens/motoboy.jpg" alt="promo" class="promo">
+			<!-- Area principal -->
+			<div class="largura">
+				<!-- A empresa -->
+				<div class="lg90">
+					<hr class="bg-red alturalinha mtop">
+					<h4 class="bold fontred mtop">Projeto e Empresa</h4>
+					<p class="bold mtop">A equipe desenvolveu um sistema para a empresa Free Soul Food em duas plataformas, web e mobile. O sistema é uma rede de compartilhamento de motoboys, onde os restaurantes cadastrados solicitam uma entrega e o motoboy mais próximo recebe uma notificação para aceitar ou recusar a entrega, se durante o percurso o motoboy receber outra solicitação e esta for aceita, o sistema recalcula a rota para conseguir adicionar os pontos da nova entrega.</p>
+					<p class="bold">A plataforma web foi desenvolvida especialmente para os restaurantes cadastrados, onde os mesmos podem cadastrar entregas que precisam serem realizadas e acompanhar o percurso do motoboy até o destino.</p>
+					<p class="bold">O desenvolvimento do Mobile foi realizado apenas para os motoboys, contando com um sistema de recebimento de entregas há serem realizadas, um mapa que se atualiza conforme as entregas são aceitas e uma tela de perfil com as informações do motoboy.</p>
+					<ul class="mtop">
+						<li class="bold">Fundada em Março de 2016.</li>
+						<li class="bold">A Free Soul Food é um delivery de alimentação natural.</li>
+						<li class="bold">Localizada na zona norte de São Paulo.</li>
+						<li class="bold">Atende exclusivamente o público desta região.</li>
+					</ul>
+				</div>
+				<!-- Escopo -->
+				<div class="fontwhite bg-red mtop">
+					<h4 class="ptop">Escopo do projeto</h4>
+					<p class="lg90 ptop">A Free Soul Food é um delivery de alimentação natural. Localizada na zona norte de São Paulo e atualmente atendem exclusivamente o público desta região.</p>
+					<p class="lg90">A empresa possui constantes problemas com motoboys. Tentaram contratar serviços de empresas que prestam serviços de delivery, mas as empresas especializadas em entregas não atendem a região.</p>
+					<p class="lg90">Junto com um grupo de empresários do segmento alimentício da zona norte, tiveram conhecimento que este é um problema comum a outros estabelecimentos.</p>
+					<p class="lg90 pbottom">Para solucionar este problema de forma coletiva, será desenvolvido uma plataforma que compartilhe entregas de motoboys. Esta plataforma permitirá que todos os restaurantes cadastrados compartilhem os seus motoboys, permitindo uma redução de custos e diminuição de tempo ocioso.</p>
+				</div>
+				<!-- Funcionalidades -->
+				<div class="mtop">
+					<h4 class="bold fontred mtop">Funcionalidades</h4>
+					<div class="row mtop">
+						<div class="col-md">
+							<div class="d-flex flex-row container">
+								<div class="p-2 mright">
+									<div class="card shadow" style="width: 20rem; height: 26rem;">
+	  									<img class="card-img-top alturaimg" src="imagens/mapa.png" alt="Card image cap">
+	  									<div class="card-body">
+	    									<h4 class="card-title">Localização</h4>
+	    									<!-- Button trigger modal -->
+											<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Modal1">
+	  											Saiba mais
+											</button>
+											<!-- Modal -->
+											<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
+													    <div class="modal-header bg-red">
+														    <h5 class="modal-title fontwhite" id="exampleModalLabel">Localização</h5>
+														    <button type="button" class="close fontwhite" data-dismiss="modal" aria-label="Close">
+														       	<span aria-hidden="true">&times;</span>
+														    </button>
+													    </div>
+													    <div class="modal-body">
+													    	<div class="ptop">
+														    Raio do Restaurante: O sistema irá gerar um raio de distância para todos os restaurantes cadastrados.
+														    </div>
+														   	<div class="top">
+														    Busca de motoboy: O sistema realiza uma busca de motoboys de acordo com o raio gerado do restaurante quregistrou a entrega.
+														    </div>
+														    <div class="ptop">
+														    Solicitação de motoboy: O sistema envia uma solicitação para o motoboy mais próximo para realizar a entrega do produto.
+														    </div>
+														    <div class="ptop">
+														    Localização do motoboy: O sistema disponibiliza um mapa para o restaurante poder acompanhar o motoboy no seu trajeto.
+														    </div>
+														    <div class="ptop pbottom">
+														    Finalização da entrega: O sistema envia uma notificação ao restaurante quando o motoboy chega ao destino final(endereço da entrega).
+														    </div>
+													    </div>
+													</div>
+											 	</div>
+											</div>
+	  									</div>
+									</div>
+								</div>
+								<div class="p-2 mright">
+									<div class="card shadow" style="width: 20rem; height: 26rem;">
+		  								<img class="card-img-top alturaimg" src="imagens/mobile.png" alt="Card image cap">
+		  								<div class="card-body">
+		    								<h4 class="card-title">Mobile</h4>
+	    									<!-- Button trigger modal -->
+											<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Modal2">
+	  											Saiba mais
+											</button>
+											<!-- Modal -->
+											<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
+													    <div class="modal-header bg-red">
+														    <h5 class="modal-title fontwhite" id="exampleModalLabel">Mobile</h5>
+														    <button type="button" class="close fontwhite" data-dismiss="modal" aria-label="Close">
+														       	<span aria-hidden="true">&times;</span>
+														    </button>
+													    </div>
+													    <div class="modal-body">
+													    	<div class="ptop">
+														    Login de motoboys: O sistema permite o login de motoboys já cadastrados.
+														    </div>
+														    <div class="ptop">
+														    Notificação: O sistema notifica para o motoboy mais próximo realizar a entrega do produto.
+														    </div>
+														    <div class="ptop">
+														    Rota: O sistema gera uma rota com base nas entregas que o motoboy aceitou.
+														    </div>
+														    <div class="ptop pbottom">
+														    Raio de solicitação: O sistema irá diminuir o raio de solicitações para recebimento de entregas do motoboy quando o mesmo estiver em movimento.
+														    </div>
+													    </div>
+													</div>
+											 	</div>
+											</div>
+		  								</div>
+									</div>
+								</div>
+								<div class="p-2 mright">
+									<div class="card shadow" style="width: 20rem; height: 26rem;">
+		  								<img class="card-img-top alturaimg" src="imagens/motoboy.png" alt="Card image cap">
+		  								<div class="card-body">
+		    								<h4 class="card-title">Administração</h4>
+	    									<!-- Button trigger modal -->
+											<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Modal3">
+	  											Saiba mais
+											</button>
+											<!-- Modal -->
+											<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content">
+													    <div class="modal-header bg-red">
+														    <h5 class="modal-title fontwhite" id="exampleModalLabel">Administração</h5>
+														    <button type="button" class="close fontwhite" data-dismiss="modal" aria-label="Close">
+														       	<span aria-hidden="true">&times;</span>
+														    </button>
+													    </div>
+													    <div class="modal-body">
+													    	<div class="ptop">
+														    Cadastro de restaurantes: O sistema permite que o administrador registre os dados dos restaurantes.
+														    </div>
+														    <div class="ptop">
+														    Login ADM: O sistema terá um administrador padrão já cadastrado no banco de dados.
+														    </div>
+														    <div class="ptop">
+														    Cadastro de motoboys: O sistema permite que o administrador registre os dados dos motoboys.
+														    </div>
+														    <div class="ptop pbottom">
+														    Registro de entregas: O sistema permite que os restaurantes através dos funcionários registrem informações sobre a entrega (tamanho, fragilidade, endereço do cliente, preço).
+														    </div>
+													    </div>
+													</div>
+											 	</div>
+											</div>
+		  								</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Membros -->
+				<div class="bg-red fontwhite mtop">
+					<h4 class="ptop">Membros</h4>
+					<div class="d-flex flex-row container">
+						<div class="p-2 mright">
+							<p class="lg90">Web Designers (Front-End):</p>
+							<ul>
+								<li>MARCOS SIMÕES BERNARDO</li>
+								<li>VICTOR EIJI ISSA</li>
+							</ul>
+						</div>
+						<div class="p-2 mright">
+							<p class="lg90">Grupo (Back-End):</p>
+							<ul>
+								<li>EMILI MARIA CAMPOS LEITE BISPO</li>
+								<li>GUILHERME BARBOSA BEZERRA RIBEIRO</li>
+								<li>GUILHERME DA COSTA CHAVES</li>
+								<li>HELENA RIBEIRO DO VAL GUERRA</li>
+								<li>JONNATHAS LUIS DE DEUS SILVA</li>
+								<li>STEPHANIE ALVES FLORIANO</li>
+							</ul>
+						</div>
+						<div class="p-2 mright">
+							<p class="lg90">Empresa:</p>
+							<ul>
+								<li>FREESOUL-FOOD</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Footer -->	
+		<footer class="bg-gray">
+			<div class="fontred">
+				<div class="lg90">
+					<br>
+					<hr class="bg-red alturalinha">
+					<div class="d-flex justify-content-between">
+						<!-- Senai -->
+						<div class="d-block">
+							<p><a href="http://www.sp.senai.br/"><img src="imagens/logo-senai.png" alt="logosenai" class="senai"></a>Escola Senai de Informática</p>
+							<p>Alameda Barão de Limeira, 539 - Santa Cecília, São Paulo-SP, 01202-001</p>
+						</div>
+						<!-- Freesoul-Food -->
+						<div>
+							<a href="https://www.freesoulfood.com.br/"><img src="imagens/freesoul.png" alt="freesoullogo" class="freesoul"></a>
+						</div>
+					</div>
+					<div>
+						© 2017 Copyright
+					</div>
+				</div>
+			</div>
+			<br>
+		</footer>
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</body>
+</html>
